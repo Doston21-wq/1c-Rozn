@@ -6,7 +6,8 @@
 }
 
 body {
-  background-color: #fdfdfd;
+  background-color: rgb(177, 177, 177);
+  
   color: #222;
 }
 
@@ -151,59 +152,81 @@ left: -180px;
   }
 }
 
+ .container {
+      max-width: 1200px;
+      width: 100%;
+    }
 
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    gap: 8px;
-}
-    
-.div1 {
-    grid-column: span 3 / span 3;
-    grid-row: span 3 / span 3;
-}
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
-.div2 {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 4;
-}
+    .card:hover {
+      transform: translateY(-5px);
+    }
 
-.div3 {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 4;
-}
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
 
-.div4 {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-column-start: 5;
-    grid-row-start: 4;
-}
+    .card-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
 
-.div5 {
-    grid-column: span 3 / span 3;
-    grid-row: span 3 / span 3;
-    grid-column-start: 1;
-    grid-row-start: 6;
-}
+    .card-text {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      color: #333;
+      flex-grow: 1;
+    }
 
-.div6 {
-    grid-column: span 3 / span 3;
-    grid-row: span 3 / span 3;
-    grid-column-start: 4;
-    grid-row-start: 6;
-}
+    .card-button {
+      background-color: #00cc66;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      align-self: start;
+    }
 
-.div7 {
-    grid-column: span 3 / span 3;
-    grid-row: span 3 / span 3;
-    grid-column-start: 4;
-    grid-row-start: 1;
-}
-        
+    .card-button:hover {
+      background-color: #00b359;
+    }
+
+    .orange { color: #ff9900; }
+    .purple { color: #cc66ff; }
+    .blue { color: #3399ff; }
+    .red { color: #ff6666; }
+    .darkblue { color: #6666ff; }
+    .green { color: #33cc99; }
+    .yellow { color: #ffcc00; }
+
+    @media (max-width: 992px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
