@@ -69,6 +69,7 @@ body {
 .li{
 position: relative;
 left: -360px;
+letter-spacing: 1px;
 }
 .li:hover {
   color: #4CAF50;
