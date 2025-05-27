@@ -310,4 +310,41 @@ letter-spacing: 1px;
     font-size: 16px;
   }
 }
-  
+
+.comfortable{
+  background: #f7f8f8;
+  padding: 100px 0px 120px;
+}
+.comfortable__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.comfortable__title {
+  color: #2c2b35;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 139.385%;
+}
+.comfortable-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.comfortable-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+li{
+  list-style: none;
+  font-size: 16px;
+  line-height: 139.385%;
+  margin-bottom: 10px;
+}
+ul li img {
+width: 30px;
+}
