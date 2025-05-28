@@ -1,41 +1,41 @@
 # 🛍️ 1C-Rozn
 
-**1C-Rozn** — bu mahsulotlar ro‘yxatini ko‘rsatishga mo‘ljallangan, yengil va moslashtiriladigan komponent. Minimalistik dizayn va 1C tizimlaridan ilhomlangan interfeys asosida ishlab chiqilgan. Frontend interfeys dizayniga soddalik va samaradorlik olib kiradi.
+**1C-Rozn** is a lightweight and customizable component designed to display a list of products. Inspired by the minimalist UI of 1C systems, it brings simplicity and efficiency to front-end design.
 
-## 📦 Xususiyatlar
+## 📦 Features
 
-- 📋 Mahsulotlar ro'yxatini toza va tushunarli tarzda ko'rsatadi
-- 🎨 Moslashtiriladigan dizayn (Figma asoslangan)
-- 📱 To‘liq responsiv: mobil qurilmalarda ham yaxshi ko‘rinadi
-- 🧩 Har qanday veb-loyihaga oson qo‘shish mumkin
-- ⚙️ Vanilla CSS/JS asosida yoki istalgan frameworkga integratsiya qilish mumkin
+- 📋 Clean and clear product list display
+- 🎨 Customizable styling (based on Figma design)
+- 📱 Fully responsive and mobile-friendly layout
+- 🧩 Easy to integrate into any web project
+- ⚙️ Built with vanilla CSS/JS and can be adapted to any framework
 
-## 📁 Strukturasi
+## 📁 Project Structure
 ├── css/
 ├── js/
 ├── img/
 ├── README.md
 
 
-## 🚀 Rejalashtirilayotgan imkoniyatlar
+## 🚀 Planned Features
 
-- 🔍 Mahsulotlarni qidirish funksiyasi
-- 📊 Narx bo‘yicha filtrlash
-- 🛒 Savatchaga qo‘shish tugmasi
-- 🌐 JSON API bilan bog‘lash
+- 🔍 Search functionality for products
+- 📊 Price-based filtering
+- 🛒 Add-to-cart button support
+- 🌐 JSON API integration
 
-## 📄 Litsenziya
+## 📄 License
 
-MIT Litsenziyasi
+MIT License
 
 ---
 
-## 🔽 Yuklab olish
+## 🔽 Download
 
-Loyihani quyidagi buyruq orqali kompyuteringizga klon qilishingiz mumkin:
+You can clone the project to your local machine using the command below:
 
 ```bash
 git clone https://github.com/foydalanuvchi/1c-rozm.git
+ 
 ```
 Made with ❤️ by Doston21-wq
-
