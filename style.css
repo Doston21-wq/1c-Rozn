@@ -383,17 +383,28 @@ li img {
 
 
 
-
-
 .popular {
   background: linear-gradient(253deg, #ebf5eb 17.34%, #effbf0 90.57%);
   padding: 60px 50px;
 }
+.popular__title{
+  position: relative;
+  top: -280px;
+left: 130px;
+ font-size: 20px;
+}
+.spanjon{
+  position: relative;
+  top: -23px;
+  left: 135px;
+}
+
+
 
 .popular__container {
   position: relative;
   max-width: 1452px;
-  padding: 0px 20px;
+  padding: 0 20px;
   margin: auto;
 }
 
@@ -405,6 +416,16 @@ li img {
 
 .popular__button {
   padding: 12px 30px;
+  border-radius: 100px;
+  background-color: #43a548;
+  color: white;
+  font-weight: 600;
+  border: none;
+  position: relative;
+  top: -295px;
+  left: 800px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .popular__button:hover {
@@ -414,41 +435,43 @@ li img {
 .popular__lists {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  gap: 20px;
   margin-top: 43px;
 }
 
 .popular__list {
   padding: 40px;
-  border-radius: 8px; /* Avval 40px edi — endi engil burchakli */
+  border-radius: 30px;
   background: #fff;
-  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .popular__list__content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .popular__list__title {
   color: #2c2b35;
   font-size: 20px;
   font-weight: 600;
-  line-height: 139.385%;
+  line-height: 1.4;
 }
 
 .popular__list__button {
-  border: 1px solid #43a548;
+  border-radius: 100px;
+  background-color: #e8fde8;
   color: #43a548;
+  border: 1px solid #43a548;
   font-size: 14px;
   font-weight: 600;
-  line-height: 139.385%;
-  /* 19.514px */
-  background-color: white;
-  padding: 4px 10px;
-  background-color: #e8fde8;
-  transition: all ease-in 0.2s;
+  padding: 6px 14px;
+  white-space: nowrap;
+  transition: background 0.2s ease-in;
 }
 
 .popular__list__button:hover {
@@ -465,22 +488,22 @@ li img {
 .popular__list__item {
   color: #838684;
   font-size: 14px;
-  line-height: 139.385%;
-  /* 19.514px */
+  line-height: 1.4;
   list-style-type: disc;
+  margin-left: 20px;
 }
 
 .popular__list__link {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   gap: 4px;
   color: #43a548;
   font-size: 14px;
-  line-height: 139.385%;
-
+  font-weight: 500;
   margin-top: 40px;
-  text-align: right;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
 }
 
 .popular__list__link:hover {
@@ -492,26 +515,18 @@ li img {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url(../assets/images/arrow-narrow-right.svg);
+  background-image: url(./image/arrow-narrow-right.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
+/* Swiper arrows */
 .swiper-button-next:after,
 .swiper-button-prev:after {
   color: #327f36;
-  font-family: swiper-icons;
   font-size: 24px;
-  text-transform: none !important;
-  letter-spacing: 0;
-  font-variant: initial;
-  line-height: 1;
   margin-top: 100px;
 }
-.popular__button,
-.popular__list__button {
-  border-radius: 0;
-  border-radius: 4px;
-}
-
 
 
 
