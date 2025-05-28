@@ -6,27 +6,18 @@ hamburger.addEventListener("click", () => {
 });
 
 var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1, // Har bir slaydda 1 ta element ko‘rinadi
+  spaceBetween: 20, // Slaydlarni orasidagi masofa
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-});
-
-// base slider
-var swiper = new Swiper(".baseSwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  slidesPerView: 1,
-  spaceBetween: 20,
-
   breakpoints: {
     640: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    992: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
