@@ -1,53 +1,91 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>1C-Товары</title>
-    <link rel="icon" href="./image/image 1.png" type="image/png">
-  <link rel="stylesheet" href="./style.css">
-   <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-      <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-</head>
-<body>
+<html lang="en">
 
-  <header class="navbar">
-    <div class="container">
-      <div class="logo"><img class="logo-img" src="./image/image 1.png" alt=""> 1C-Товары</div>
-      <nav class="nav" id="nav-menu">
-        <a href="#" class="li">Как это работает</a>
-        <a href="#" class="li">Инструкции</a>
-        <a href="#" class="li">Продукты</a>
-        <a href="#" class="li">База знаний</a>
-        <a href="#" class="li">О нас</a>
-        <a href="#" class="btn-login" style="color: white;">Вход</a>
-      
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./responsive.css">
+
+
+  <title>1С-Товары</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a href="#">
+        <img class="header__logo" src="assets/images/logo.svg" alt="logo" />
+      </a>
+      <nav class="nav">
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a class="nav__link ull" href="#">Как это работает</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link ull" href="#">Инструкции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link ull" href="#">Продукты</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link ull" href="#">База знаний </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link ull" href="#">О нас</a>
+          </li>
+          <li class="nav__item">
+            <button class="button header__button">Вход</button>
+          </li>
+        </ul>
       </nav>
-      <div class="hamburger" id="hamburger">&#9776;</div>
+      <div class="navbar-toggle" id="navbarToggle">
+        <div class="bar">
+          <i class="ri-menu-fill"></i>
+        </div>
+      </div>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Управление запасами розничного магазина</h1>
-      <p>Использование сервиса 1C-Товары позволяет значительно упростить работу по формированию заявок поставщику.</p>
-      <button class="btn-demo">Заказать демонстрацию</button>
-    </div>
-    <div class="hero-img">
-      <img src="./image/Grocery shopping-amico 2 (1).png" alt="Store image"> 
-    </div>
-  </section>
-   
-   <section class="services">
+  
+  <div class="overlay" id="overlay"></div>
+
+
+
+  <main>
+    <section class="control">
+      <div class="container">
+        <div class="control__container">
+          <div class="control__left">
+            <h1 class="control__title">
+              Управление запасами розничного магазина
+            </h1>
+            <p class="control__text">
+              Использование сервиса 1С-Товары позволяет значительно упростить
+              работу по формированию заявок поставщику.
+            </p>
+            <button class="control__button button">
+              Заказать демонстрацию
+            </button>
+          </div>
+          <div class="control__right">
+            <img src="assets/images/control-image.png" alt="coltrol-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
       <div class="container">
         <div class="services__wrapper">
           <div class="services__top">
-            <article class="services__card cc">
+            <article class="services__card">
               <div class="serices__card__content">
-                <img src="image/xcz 1.png" alt="services-1" />
+                <img src="assets/images/services-1.svg" alt="services-1" />
                 <h3 class="services__title">Управление запасами</h3>
               </div>
               <p class="services__text">
@@ -60,7 +98,7 @@
             </article>
             <article class="services__card">
               <div class="serices__card__content">
-                <img src="./image/services-2.svg" alt="services-2" />
+                <img src="assets/images/services-2.svg" alt="services-2" />
                 <h3 class="services__title">Автозаказ товаров</h3>
               </div>
               <p class="services__text">
@@ -76,7 +114,7 @@
           <div class="services__center">
             <article class="services__card">
               <div class="serices__card__content">
-                <img src="./image/services-3.svg" alt="services-3" />
+                <img src="assets/images/services-3.svg" alt="services-3" />
                 <h3 class="services__title">Анализ магазина</h3>
               </div>
               <p class="services__text">
@@ -89,7 +127,7 @@
             </article>
             <article class="services__card">
               <div class="serices__card__content">
-                <img src="./image/services-5.svg" alt="services-4" />
+                <img src="assets/images/services-4.svg" alt="services-4" />
                 <h3 class="services__title">Прогнозирование спроса</h3>
               </div>
               <p class="services__text">
@@ -102,7 +140,7 @@
             </article>
             <article class="services__card services__card-none">
               <div class="serices__card__content">
-                <img src="./image/services-6.svg" alt="services-5" />
+                <img src="assets/images/services-5.svg" alt="services-5" />
                 <h3 class="services__title">Управление поставками</h3>
               </div>
               <p class="services__text">
@@ -118,7 +156,7 @@
           <div class="services__end">
             <article class="services__card">
               <div class="serices__card__content">
-                <img src="image/xcxx 1 (1).png" alt="services-6" />
+                <img src="assets/images/services-6.svg" alt="services-6" />
                 <h3 class="services__title">Управление ассортиментом</h3>
               </div>
               <p class="services__text">
@@ -131,7 +169,7 @@
             </article>
             <article class="services__card">
               <div class="serices__card__content">
-                <img src="image/cd 1.png" alt="services-7" />
+                <img src="assets/images/services-7.svg" alt="services-7" />
                 <h3 class="services__title">Управление продажами</h3>
               </div>
               <p class="services__text">
@@ -146,60 +184,88 @@
         </div>
       </div>
     </section>
-     <section class="free">
+    <section class="free">
       <div class="container free__wrapper">
         <div class="free__content">
-          <img src="/image/gift-01@2x.png" alt="gift" />
+          <img src="assets/images/gift-01.svg" alt="gift" />
           <p class="free__text">
             Подключи любой продукт на 1 месяц бесплатно и оцени наши
             приемущества
           </p>
         </div>
-        <button class="button services__button free__button">Подключить сейчас</button>
+        <button class="button free__button">Подключить сейчас</button>
       </div>
     </section>
     <section class="comfortable">
-<div>
- <section class="comfortable">
-  <div class="comfortable__wrapper">
-    <h2 class="comfortable__title">С нами удобнее</h2>
-    <div class="comfortable-cards">
-
-      <div class="comfortable-card">
-        <h3>Без 1С-Товары</h3>
-        <ul>
-          <li><img src="./image/cross.svg" alt="">Лишний товар складируется и не продается</li>
-          <li><img src="./image/cross.svg" alt="">Постоянно приходится думать какой продукт будет<br>актуален, а какой стоит выводить из ассортимента</li>
-          <li><img src="./image/cross.svg" alt="">Лишний товар складируется и не продается</li>
-          <li><img src="./image/cross.svg" alt="">Постоянно приходится думать какой продукт будет<br>актуален, а какой стоит выводить из ассортимента</li>
-          <li><img src="./image/cross.svg" alt="">Лишний товар складируется и не продается</li>
-          <li><img src="./image/cross.svg" alt="">Лишний товар складируется и не продается</li>
-          <li><img src="./image/cross.svg" alt="">Лишний товар складируется и не продается</li>
-        </ul>
+      <div class="container">
+        <h3 class="comfortable__title">С нами удобнее</h3>
+        <div class="comfortable__cards">
+          <article class="comfortable__card">
+            <h4 class="comfortable__card__title">Вместе с 1С-Товары</h4>
+            <ul class="comfortable__card__lists">
+              <li class="comfortable__card__cross">
+                Лишний товар складируется и не продается
+              </li>
+              <li class="comfortable__card__cross">
+                Постоянно приходится думать какой продукт будет актуален, а
+                какой стоит выводить из ассортимента
+              </li>
+              <li class="comfortable__card__cross">
+                Лишний товар складируется и не продается
+              </li>
+              <li class="comfortable__card__cross">
+                Постоянно приходится думать какой продукт будет актуален, а
+                какой стоит выводить из ассортимента
+              </li>
+              <li class="comfortable__card__cross">
+                Лишний товар складируется и не продается
+              </li>
+              <li class="comfortable__card__cross">
+                Постоянно приходится думать какой продукт будет актуален, а
+                какой стоит выводить из ассортимента
+              </li>
+              <li class="comfortable__card__cross">
+                Лишний товар складируется и не продается
+              </li>
+            </ul>
+          </article>
+          <article class="comfortable__card comfortable__card-green">
+            <h4 class="comfortable__card__title">Без 1С-Товары</h4>
+            <ul class="comfortable__card__lists">
+              <li class="comfortable__card__check">
+                Организованная система остатков
+              </li>
+              <li class="comfortable__card__check">
+                В магазине есть определенная ассортиментная матрица,
+                поддерживающая актуальный ассортимент
+              </li>
+              <li class="comfortable__card__check">
+                Рассчитанный прогноз спроса
+              </li>
+              <li class="comfortable__card__check">
+                В магазине есть определенная ассортиментная матрица,
+                поддерживающая актуальный ассортимент
+              </li>
+              <li class="comfortable__card__check">
+                Организованная система остатков
+              </li>
+              <li class="comfortable__card__check">
+                В магазине есть определенная ассортиментная матрица,
+                поддерживающая актуальный ассортимент
+              </li>
+              <li class="comfortable__card__check">
+                Система контроля упущенных продаж
+              </li>
+            </ul>
+          </article>
+        </div>
       </div>
-
-      <div class="comfortable-card green">
-        <h3>Вместе с 1С-Товары</h3>
-        <ul>
-          <li><img src="./image/check.svg" alt="">Организованная система остатков</li>
-          <li><img src="./image/check.svg" alt="">В магазине есть определенная ассортиментная<br>матрица, поддерживающая актуальный ассортимент</li>
-          <li><img src="./image/check.svg" alt="">Рассчитанный прогноз спроса</li>
-          <li><img src="./image/check.svg" alt="">В магазине есть определенная ассортиментная<br>матрица, поддерживающая актуальный ассортимент</li>
-          <li><img src="./image/check.svg" alt="">Организованная система остатков</li>
-          <li><img src="./image/check.svg" alt="">В магазине есть определенная ассортиментная<br>матрица, поддерживающая актуальный ассортимент</li>
-          <li><img src="./image/check.svg" alt="">Система контроля упущенных продаж</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-<section class="popular">
+    </section>
+    <section class="popular">
       <div class="popular__container">
-        <div class="popular__header">
         <div class="container">
           <div class="popular__content">
-            <h3 class="popular__title"> Популярные <span class="spanjon"> продукты</span></h3>
+            <h3 class="popular__title">Популярные продукты</h3>
             <button class="button popular__button">Все продукты</button>
           </div>
 
@@ -374,7 +440,6 @@
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-          </div>
         </div>
       </div>
     </section>
@@ -851,4 +916,5 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./script.js"></script>
 </body>
+
 </html>
