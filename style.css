@@ -421,7 +421,7 @@ li img {
 
 .popular__list {
   padding: 40px;
-  border-radius: 40px;
+  border-radius: 8px; /* Avval 40px edi — endi engil burchakli */
   background: #fff;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
 }
@@ -506,6 +506,12 @@ li img {
   line-height: 1;
   margin-top: 100px;
 }
+.popular__button,
+.popular__list__button {
+  border-radius: 0;
+  border-radius: 4px;
+}
+
 
 
 
